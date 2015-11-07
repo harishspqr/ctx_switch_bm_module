@@ -1,4 +1,4 @@
-This is a kernel module to benchmark the context swithcing time with as minimal overhead as possible. Other tools appear to use atleast 2 system calls per iteration which motivated me to write my own context switching tool.
+This is a kernel module to benchmark the context swithcing time with as minimal overhead as possible. This tool has only 1 system call overhead per iteration which would equate to a context switch. 
 Compiled against linux kernel version 4.2. 
 
 2_processes\
