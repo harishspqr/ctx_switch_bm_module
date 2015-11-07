@@ -2,10 +2,18 @@ This is a kernel module to benchmark the context swithcing time with as minimal 
 Compiled against linux kernel version 4.2. 
 
 2_processes\
-	Supports only 2 proceses parent & child switching back and forth between each other.  
+	Supports only 2 proceses parent & child switching back and forth between each other. 
+
+How to run:
+make 
+./test 
 
 multiple_processes\
 	Supports context switching between any number of children processes. 
+How to run:
+make 
+./mmtest <No of processes>
 
+When changes are done run make clean before running make. 
 
 This is not known to work in SMP environment which would require additional locking(maybe for future). 
