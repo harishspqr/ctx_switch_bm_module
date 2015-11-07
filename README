@@ -1,0 +1,11 @@
+This is a kernel module to benchmark the context swithcing time with as minimal overhead as possible. Other tools appear to use atleast 2 system calls per iteration which motivated me to write my own context switching tool.
+Compiled against linux kernel version 4.2. 
+
+2_processes\
+	Supports only 2 proceses parent & child switching back and forth between each other.  
+
+multiple_processes\
+	Supports context switching between any number of children processes. 
+
+
+This is not known to work in SMP environment which would require additional locking(maybe for future). 
